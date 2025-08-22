@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Space — Interactive Stars & Planets</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Three.js from CDN -->
+  <script defer src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>
+  <script defer src="https://unpkg.com/three@0.161.0/examples/jsm/postprocessing/EffectComposer.js"></script>
+  <script defer src="https://unpkg.com/three@0.161.0/examples/jsm/postprocessing/RenderPass.js"></script>
+  <script defer src="https://unpkg.com/three@0.161.0/examples/jsm/postprocessing/UnrealBloomPass.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="ui">
+    <div class="hint">Touch/Move pointer — stars will avoid your finger</div>
+    <div class="stats">
+      <span id="fps">FPS: —</span>
+      <span>•</span>
+      <span id="count">Stars: —</span>
+    </div>
+  </div>
+  <canvas id="scene"></canvas>
+</body>
+</html>
